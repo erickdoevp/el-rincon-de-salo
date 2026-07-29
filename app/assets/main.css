@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+
+/* ==========================================================================
+   El Rincón de Salo — sistema de diseño
+   Paleta tomada de la lana del logo. Todo color plano (sin degradados).
+   ========================================================================== */
+@theme {
+  --color-crema: #fbf7f0;
+  --color-crema-hondo: #f2e9da;
+  --color-papel: #ffffff;
+  --color-tinta: #2a2622;
+  --color-tinta-suave: #6f665c;
+
+  --color-magenta: #c0398a;
+  --color-magenta-hondo: #9c2d70;
+
+  --color-hilo-amarillo: #e6a02f;
+  --color-hilo-verde: #7fb84e;
+  --color-hilo-azul: #4fa8c4;
+  --color-hilo-naranja: #e07b3e;
+  --color-hilo-rosa: #d86fa8;
+
+  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+  --font-body: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Parisienne', ui-serif, cursive;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* deja aire bajo el header fijo al saltar con anclas */
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background-color: var(--color-crema);
+  color: var(--color-tinta);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Fraunces con eje óptico suave: da la calidez "hecha a mano" */
+.font-display {
+  font-optical-sizing: auto;
+}
+
+/* --- Puntada corrida: borde de guiones que evoca la costura --------------- */
+.puntada {
+  border: 2px dashed color-mix(in srgb, var(--color-magenta) 45%, transparent);
+}
+
+/* --- Aparición al hacer scroll (respeta reduce-motion) -------------------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+[data-reveal].reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Foco visible y accesible en toda la página */
+:focus-visible {
+  outline: 3px solid var(--color-magenta);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
