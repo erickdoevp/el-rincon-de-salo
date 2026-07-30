@@ -197,6 +197,50 @@ export const tejidos: Tejido[] = [
     imagen: '/images/tejidos/dino-menta.jpeg',
     alt: 'Dinosaurio amigurumi verde menta con placas naranjas en el lomo tejido a crochet',
   },
+  {
+    id: 'muneca-castana',
+    titulo: 'Muñeca personalizada',
+    descripcion: 'Muñeca amigurumi con rostro y outfit hechos a tu gusto.',
+    imagen: '/images/tejidos/muneca-personalizada-castana.jpeg',
+    alt: 'Muñeca amigurumi de cabello castaño con blusa mostaza y jeans tejida a crochet',
+    alto: true,
+  },
+  {
+    id: 'muneco-rubio',
+    titulo: 'Muñeco personalizado',
+    descripcion: 'Amigurumi de personaje con atuendo oscuro y detalle fino.',
+    imagen: '/images/tejidos/muneco-personalizado-rubio.jpeg',
+    alt: 'Muñeco amigurumi rubio con atuendo negro tejido a crochet',
+    alto: true,
+  },
+  {
+    id: 'trio-munecas',
+    titulo: 'Trío de muñecas',
+    descripcion: 'Set de muñecas personalizadas tejidas a juego.',
+    imagen: '/images/tejidos/trio-munecas.jpeg',
+    alt: 'Tres muñecas amigurumi personalizadas con distintos peinados y atuendos tejidas a crochet',
+  },
+  {
+    id: 'monstruo-morado',
+    titulo: 'Mini monstruo peludo',
+    descripcion: 'Amigurumi de bolsillo de un monstruo con gorro peludo.',
+    imagen: '/images/tejidos/mini-monstruo-morado.jpeg',
+    alt: 'Amigurumi miniatura de un monstruo morado con gorro peludo tejido a crochet',
+  },
+  {
+    id: 'monstruo-verde',
+    titulo: 'Mini monstruo de un ojo',
+    descripcion: 'Amigurumi de bolsillo verde de un solo ojo.',
+    imagen: '/images/tejidos/mini-monstruo-verde.jpeg',
+    alt: 'Amigurumi miniatura de un monstruo verde de un solo ojo tejido a crochet',
+  },
+  {
+    id: 'monstruo-azul',
+    titulo: 'Mini monstruo con cuernos',
+    descripcion: 'Amigurumi de bolsillo azul con cuernitos.',
+    imagen: '/images/tejidos/mini-monstruo-azul.jpeg',
+    alt: 'Amigurumi miniatura de un monstruo azul con cuernos tejido a crochet',
+  },
 ];
 
 export const pasos: Paso[] = [
@@ -377,8 +421,8 @@ export const precios: PrecioItem[] = [
  */
 export const tiemposEntrega: TiempoEstimado[] = [
   { id: 'tiempo-1', tipo: 'Llaveros y piezas pequeñas', tiempo: '1 a 2 días' },
-  { id: 'tiempo-2', tipo: 'Amigurumis y figuras', tiempo: '2 a 10 días' },
-  { id: 'tiempo-3', tipo: 'Ramos, prendas y pedidos grandes', tiempo: '2 a 3 semanas' },
+  { id: 'tiempo-2', tipo: 'Amigurumis, figuras, ramos', tiempo: '2 a 10 días' },
+  { id: 'tiempo-3', tipo: 'Prendas y pedidos grandes', tiempo: '2 a 3 semanas' },
 ];
 
 /**

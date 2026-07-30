@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "limpiar-basura-macos": "find .output/public -name '._*' -delete 2>/dev/null || true",
     "generate-con-reintento": "nuxt generate || nuxt generate",
-    "deploy": "npm run generate-con-reintento && npm run limpiar-basura-macos && wrangler pages deploy .output/public"
+    "deploy": "npm run generate-con-reintento && npm run limpiar-basura-macos && wrangler pages deploy .output/public --project-name=rincon-de-salo --branch=main"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.14.0",

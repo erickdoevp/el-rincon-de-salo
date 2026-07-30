@@ -44,15 +44,15 @@ const valores = [
         </ul>
       </div>
 
-      <!-- Retrato del producto: el tapete de margaritas, con marco de puntada -->
+      <!-- Retrato del producto: muñeca personalizada, con marco de puntada -->
       <figure data-reveal style="--reveal-delay: 120ms" class="relative mx-auto max-w-md">
         <div class="puntada rounded-[2rem] p-3">
           <NuxtImg
-            src="/images/tejidos/tapete-margaritas.jpeg"
-            alt="Tapete circular blanco rematado con margaritas, tejido a crochet sobre el pasto"
-            class="aspect-square w-full rounded-[1.6rem] object-cover"
-            width="640"
-            height="640"
+            src="/images/tejidos/muneca-doctora.jpeg"
+            alt="Muñeca amigurumi con bata, lentes y estetoscopio, tejida a crochet a mano"
+            class="aspect-[4/5] w-full rounded-[1.6rem] object-cover"
+            width="720"
+            height="900"
             format="webp"
             sizes="xs:90vw sm:448px"
             loading="lazy"
